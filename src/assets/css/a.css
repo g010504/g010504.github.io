@@ -1,0 +1,458 @@
+.cat {
+    width: 70px;
+    height: 36px;
+    margin-top: 2px;
+    position: absolute;
+    animation: flying 7s linear infinite;
+}
+
+@keyframes flying {
+    0% {
+        transform: translateX(-65px);
+    }
+
+    49% {
+        transform: translateX(500px);
+    }
+
+    51% {
+        transform: translateX(630px);
+    }
+
+    100% {
+        transform: translateX(1170px);
+    }
+}
+
+.title .fly {
+    position: absolute;
+    width: 9px;
+    height: 3px;
+    border-radius: 50%;
+    top: 1px;
+    right: 16px;
+}
+
+.title .flyz {
+    height: 3px;
+    border-right: rgb(129, 128, 128) solid 0.7px;
+    position: absolute;
+    top: 2.5px;
+    right: 20.2px;
+}
+
+.title .flyd {
+    transform: scale(0.1);
+    border: rgb(129, 128, 128) solid 0.1px;
+    background-color: rgb(129, 128, 128);
+}
+
+.title .flys {
+    border: rgb(129, 128, 128) solid 0.1px;
+}
+
+.title .flya {
+    transform: scale(0.8);
+    animation: rotate 0.1s infinite;
+}
+
+.title .flyb {
+    transform: scale(0.6);
+    animation: rotateb 0.1s infinite;
+
+}
+
+.title .flyc {
+    transform: scale(0.4);
+    animation: rotate 0.1s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        border-top: rgb(129, 128, 128) solid 0.1px;
+        border-bottom: rgb(129, 128, 128) solid 0.1px;
+    }
+
+    100% {
+        border-right: rgb(129, 128, 128) solid 0.1px;
+        border-left: rgb(129, 128, 128) solid 0.1px;
+    }
+}
+
+@keyframes rotateb {
+    0% {
+        border-right: rgb(129, 128, 128) solid 0.1px;
+        border-left: rgb(129, 128, 128) solid 0.1px;
+    }
+
+    100% {
+        border-top: rgb(129, 128, 128) solid 0.1px;
+        border-bottom: rgb(129, 128, 128) solid 0.1px;
+    }
+
+}
+
+
+.title .top {
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    right: 10px;
+    position: absolute;
+    background-color: rgb(25, 142, 251);
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 1;
+    border: rgb(129, 128, 128) solid 0.1px;
+}
+
+.title .top .face {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    left: 10px;
+    background-color: white;
+    border: rgb(129, 128, 128) solid 0.1px;
+    border-radius: 50%;
+}
+
+.title .top .ease {
+    position: absolute;
+    width: 5px;
+    height: 3px;
+    top: 2px;
+    left: 13px;
+    transform: rotateZ(40deg);
+    border: rgb(129, 128, 128) solid 0.1px;
+    border-radius: 45%;
+    background-color: white;
+}
+
+.title .top .ease::before {
+    content: '';
+    display: block;
+    width: 3px;
+    height: 1.5px;
+    border-right: black solid 0.6px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.5px;
+    left: 0px;
+}
+
+.title .top .beards {
+    position: absolute;
+    left: 11.5px;
+    transform: rotateZ(-30deg);
+    top: 3.5px;
+}
+
+.title .top .beard {
+    width: 4.5px;
+    border-top: rgb(129, 128, 128) solid 0.1px;
+    position: absolute;
+    border-radius: 50% 0 0 0;
+}
+
+.title .top .beard:nth-child(1) {
+    top: 5px;
+    transform: rotateZ(10deg);
+}
+
+.title .top .beard:nth-child(2) {
+    top: 6px;
+}
+
+.title .top .beard:nth-child(3) {
+    top: 7px;
+    transform: rotateZ(-10deg);
+}
+
+.title .mouth {
+    width: 8px;
+    height: 3px;
+    border-bottom: rgb(129, 128, 128) solid 0.1px;
+    transform: rotateZ(-10deg);
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.title .top .mouth2 {
+    top: 10px;
+    left: 13px;
+}
+
+.title .mouth1 {
+    top: 15.4px;
+    right: 9px;
+    border-right: rgb(129, 128, 128) solid 0.1px;
+}
+
+.title .mouth-white {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    top: 15.4px;
+    right: 9.7px;
+    z-index: 2;
+    border: none;
+    border-radius: 50%;
+}
+
+.title .nose {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: red;
+    border: rgb(129, 128, 128) solid 0.1px;
+    position: absolute;
+    top: 10px;
+    right: 9.5px;
+}
+
+.title .scarf {
+    position: absolute;
+    width: 14px;
+    height: 2px;
+    top: 21.3px;
+    left: 39.5px;
+    z-index: 3;
+    background-color: red;
+    border-radius: 0 0 50% 50%;
+    overflow: hidden;
+    transform: rotateZ(25deg);
+}
+
+.title .scarf div {
+    position: absolute;
+    top: -49.6px;
+    background-color: rgb(25, 142, 251);
+    left: -33px;
+    width: 80px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.title .small {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    /* background-color: yellow; */
+    border: rgb(129, 128, 128) solid 0.1px;
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    z-index: 4;
+    overflow: hidden;
+}
+
+.title .small .border {
+    position: absolute;
+    width: 4px;
+    border-top: rgb(129, 128, 128) solid 0.1px;
+}
+
+.title .small .border:nth-child(1) {
+    top: 0.3px;
+}
+
+.title .small .border:nth-child(2) {
+    top: 0.8px;
+}
+
+.title .small .border:nth-child(3) {
+    top: 3.5px;
+    right: -0.7px;
+    transform: rotateZ(90deg);
+}
+
+.title .body {
+    position: absolute;
+    width: 14px;
+    height: 15px;
+    top: 21px;
+    left: 36.7px;
+    z-index: 2;
+    background-color: rgb(25, 142, 251);
+    border-radius: 0px 0px 50% 50%;
+    transform: rotateZ(25deg);
+    overflow: hidden;
+    border: rgb(129, 128, 128) solid 0.1px;
+}
+
+.title .body .koudai {
+    position: absolute;
+    width: 7px;
+    height: 10px;
+    top: 0px;
+    right: -3px;
+    transform: rotateZ(5deg);
+    border-radius: 0 0 3px 3px;
+    background-color: white;
+    border: rgb(129, 128, 128) solid 0.1px;
+
+}
+
+.title .body .koudai1 {
+    position: absolute;
+    width: 5px;
+    height: 6px;
+    top: 2px;
+    right: -2.5px;
+    transform: rotateZ(5deg);
+    border: rgb(129, 128, 128) solid 0.1px;
+    border-radius: 50% 0 50% 50%;
+}
+
+.title .body .line {
+    position: absolute;
+    top: 3px;
+    height: 5px;
+    border-right: rgb(129, 128, 128) solid 0.1px;
+    border-radius: 0 0 50% 50%;
+}
+
+.title .body .line1 {
+    right: 5.5px;
+    transform: rotateZ(9deg);
+}
+
+.title .body .line2 {
+    left: 5.5px;
+    transform: rotateZ(-3deg);
+}
+
+.title .body .hands {
+    border: rgb(129, 128, 128) solid 0.1px;
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: white;
+    border-radius: 50%;
+    top: 7.5px;
+    left: 5.1px;
+}
+
+.title .tail {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: red;
+    border: rgb(129, 128, 128) solid 0.1px;
+    position: absolute;
+    top: 26px;
+    left: 33px;
+    z-index: 2;
+}
+
+.title .tail1 {
+    width: 5px;
+    position: absolute;
+    border-top: rgb(129, 128, 128) solid 0.1px;
+    transform: rotateZ(25deg);
+    top: 27.5px;
+    left: 33px;
+}
+
+.title {
+    font-size: 24px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .title .title-text {
+    width: 110px;
+    left: 50%;
+    margin-left: -55px;
+    background-color: #c3dbff;
+    position: absolute;
+    z-index: 10;
+    border-left: #c3dbff solid 1px;
+    border-right: #c3dbff solid 1px;
+    color: white;
+  }
+  
+  .title span {
+    display: block;
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    animation: open 7s linear infinite;
+    transform: rotateY(90deg);
+    background-color: #a8c3ea;
+  }
+  .title span::before {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    border: white solid 1px;
+  }
+  .left-door::before,
+  .after::before,
+  .right-door::before,
+  .before::before {
+    position: absolute;
+    top: 50%;
+    margin-top: -1.5px;
+  }
+  .left-door::before,
+  .after::before {
+    right: 5px;
+  }
+  .right-door::before,
+  .before::before {
+    left: 5px;
+  }
+  .title .left-door {
+    transform-origin: 0px;
+    animation-delay: 4.1s;
+  }
+  .title .right-door {
+    position: absolute;
+    right: 0;
+    transform-origin: 30px;
+    animation-delay: 3.6s;
+  }
+  .title-text .before {
+    border-right: #c3dbff solid 1px;
+    left: -30px;
+    transform-origin: 30px;
+  }
+  .title-text .after {
+    transform-origin: 0px;
+    border-left: #c3dbff solid 1px;
+    animation-delay: 0.5s;
+  }
+  @keyframes open {
+    0% {
+      transform: rotateY(90deg);
+    }
+  
+    39% {
+      transform: rotateY(90deg);
+    }
+    45% {
+      transform: rotateY(0deg);
+    }
+    55% {
+      transform: rotateY(90deg);
+    }
+    100% {
+      transform: rotateY(90deg);
+    }
+  }
+  
+  .title-text .after {
+    top: 0;
+    right: -30px;
+  }
+  
